@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/calendaricon"
+        android:layout_marginStart="15dp"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/startdate"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="บันทึก"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="onSave"
+        style="@style/btn_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/button4"
+        android:layout_above="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:text="ยกเลิก"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="onCancel"
+        android:id="@+id/button7"
+        style="@style/btn_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4" />
+
+    <TextView
+        android:text="วันเริ่มต้นมีรอบเดือน"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_marginTop="79dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="กรุณาเลือกวันเริ่มต้นประจำเดือน"
+        android:ems="10"
+        android:id="@+id/startdate"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+
+</RelativeLayout>
+

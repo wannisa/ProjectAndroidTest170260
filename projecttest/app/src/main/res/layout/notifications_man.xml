@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:background="#DDDDDD"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="ปฏิทิน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="12dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/doctoricon" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drugicon"
+            android:id="@+id/drugicon"
+            android:layout_alignTop="@+id/faqicon"
+            android:layout_toStartOf="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/googlecalendaricon"
+            android:id="@+id/googlecalendaricon"
+            android:layout_above="@+id/textView12"
+            android:layout_alignEnd="@+id/textView12" />
+
+        <TextView
+            android:text="ค้นคว้าบทความ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/faqicon"
+            android:id="@+id/faqicon"
+            android:layout_above="@+id/textView10"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_marginEnd="18dp" />
+
+        <TextView
+            android:text="แจ้งเตือนยา"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/doctoricon"
+            android:id="@+id/doctoricon"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/textView11" />
+
+        <TextView
+            android:text="นัดคุณหมอ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="12dp"
+            android:layout_marginLeft="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/googlecalendaricon"
+            android:layout_marginEnd="38dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="ยกเลิก"
+        style="@style/btn_color"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/calendardrug"
+        android:layout_marginBottom="142dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/adddrugs" />
+
+    <Button
+        android:text="แจ้งเตือนการทานยา"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/adddrugs"
+        style="@style/btn_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/calendardrug"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bell"
+        android:id="@+id/imageView5"
+        android:layout_above="@+id/adddrugs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+
+</RelativeLayout>

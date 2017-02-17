@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FeedPatientActivity"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textIntro"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calendaricon"
+            android:id="@+id/calendaricon"
+            android:layout_marginRight="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:text="บันทึกการตกไข่"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="12dp"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="ปฏิทิน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignParentEnd="true"
+            android:textSize="12dp"
+            android:id="@+id/textView17" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/googlecalendaricon"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView17"
+            android:id="@+id/googlecalendaricon" />
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/doctoricon"
+                android:id="@+id/doctoricon"
+                android:layout_marginLeft="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/googlecalendaricon"
+            android:layout_marginEnd="28dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/faqicon"
+            android:id="@+id/faqicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textIntro" />
+
+        <TextView
+            android:text="ค้นคว้าบทความ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/faqicon"
+            android:layout_toStartOf="@+id/textView14"
+            android:layout_marginEnd="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drugicon"
+            android:id="@+id/drugicon"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textView15" />
+
+        <TextView
+            android:text="นัดคุณหมอ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/doctoricon"
+            android:layout_alignStart="@+id/doctoricon" />
+
+        <view
+            android:id="@+id/recycler_view"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="475dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="แจ้งเตือนยา"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textSize="12dp"
+            android:layout_below="@+id/drugicon"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_marginStart="5dp" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

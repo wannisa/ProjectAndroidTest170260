@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FeedPatientActivity"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textIntro"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drugicon"
+            android:id="@+id/drugicon"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:text="แจ้งเตือนยา"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/drugicon"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <view
+            android:id="@+id/recycler_view"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="475dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/faqicon"
+            android:id="@+id/faqicon"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textIntro"
+            android:layout_marginEnd="26dp" />
+
+        <TextView
+            android:text="ค้นคว้าบทความ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/faqicon"
+            android:layout_alignEnd="@+id/textIntro" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/googlecalendaricon"
+            android:id="@+id/googlecalendaricon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+        <TextView
+            android:text="ปฏิทิน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recycler_view"
+            android:id="@+id/textView16"
+            android:layout_alignStart="@+id/googlecalendaricon"
+            android:layout_alignEnd="@+id/googlecalendaricon" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/doctoricon"
+            android:id="@+id/doctoricon"
+            android:layout_marginLeft="280dp"
+            android:layout_marginStart="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textIntro" />
+
+        <TextView
+            android:text="นัดคุณหมอ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/doctoricon"
+            android:layout_toEndOf="@+id/textIntro"
+            android:layout_marginStart="16dp" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

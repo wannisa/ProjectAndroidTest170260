@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD">
+
+
+    <TextView
+        android:text="MENU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/notificationbutton"
+        android:id="@+id/notificationbutton"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/faqbutton"
+        android:id="@+id/faqbutton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/notificationbutton"
+        android:layout_alignStart="@+id/notificationbutton" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/doctorbutton"
+        android:id="@+id/doctorbutton"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/faqbutton"
+        android:layout_alignStart="@+id/faqbutton" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/googlecalendar"
+        android:layout_marginTop="17dp"
+        android:id="@+id/googlecalendar"
+        android:layout_below="@+id/doctorbutton"
+        android:layout_alignStart="@+id/doctorbutton" />
+
+
+</RelativeLayout>

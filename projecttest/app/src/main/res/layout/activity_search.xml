@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+   >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchTextbox"
+        android:hint="กรุณากรอกบทความที่ต้องการค้นหา"
+        android:layout_marginBottom="100dp"
+        android:layout_above="@+id/searchButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/searchButton"
+        android:background="@drawable/searchbutton"
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignEnd="@+id/button6" />
+
+    <Button
+        android:text="แสดงบทความทั้งหมด"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        style="@style/btn_color"
+        android:textSize="20dp"
+        android:layout_marginBottom="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ค้นคว้าบทความ"
+        android:id="@+id/textView3"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:background="#DDDDDD"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="บันทึกการตกไข่"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="ค้นคว้าบทความ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/doctoricon"
+            android:id="@+id/doctoricon"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/faqicon"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:text="นัดคุณหมอ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_marginLeft="7dp" />
+
+        <TextView
+            android:text="ปฏิทิน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView11" />
+
+        <TextView
+            android:text="แจ้งเตือนยา"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textSize="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calendaricon"
+            android:id="@+id/calendaricon"
+            android:layout_marginRight="350dp"
+            android:layout_alignTop="@+id/faqicon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drugicon"
+            android:id="@+id/drugicon"
+            android:layout_alignTop="@+id/faqicon"
+            android:layout_toStartOf="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/faqicon"
+            android:id="@+id/faqicon"
+            android:layout_above="@+id/textView10"
+            android:layout_toStartOf="@+id/doctoricon"
+            android:layout_marginEnd="11dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/googlecalendaricon"
+            android:id="@+id/googlecalendaricon"
+            android:layout_marginRight="1dp"
+            android:layout_above="@+id/textView12"
+            android:layout_alignEnd="@+id/textView12" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
